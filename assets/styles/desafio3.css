@@ -1,0 +1,31 @@
+* {
+    margin: 9;
+    padding: 9;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+h1, .contraseña, .ingresar {
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    font-size: 20px;
+}
+
+button {
+    font-size: 14px;
+}
+
+
+
