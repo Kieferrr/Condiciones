@@ -1,0 +1,50 @@
+* {
+   margin: 9;
+   padding: 9; 
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stickers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    
+}
+
+.sticker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    width: 160px;
+}
+
+.instruccion, .mensaje, .boton {
+    display: flex;
+    justify-content: center;
+}
+
+.instruccion {
+    font-size: 24px;
+}
+
+button {
+    font-size: 14px;
+}
+
+img {
+    width: 250px;
+}
