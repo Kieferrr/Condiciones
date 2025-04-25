@@ -47,11 +47,26 @@
             <option value="9">9</option>
         </select>
     </div>
+    <p class="password"></p>
     <div class="ingresar">
-        <button>Ingresar</button>
-    </div>
+        <button
+        onclick="
+        let digito1 = parseInt(document.querySelector('#digito1').value)
+        let digito2 = parseInt(document.querySelector('#digito2').value)
+        let digito3 = parseInt(document.querySelector('#digito3').value)
+        let password = document.querySelector('.password')
 
-    <!-- JS -->
-    <script src="assets/js/desafio3.js"></script>
+        if (digito1 == 9 && digito2 == 1 && digito3 == 1) {
+            password.textContent = 'password 1 correcto'
+        }
+        else if (digito1 == 7 && digito2 == 1 && digito3 == 4) {
+            password.textContent = 'password 2 correcto'
+        }
+        else {
+            password.textContent = 'password incorrecto'
+        }
+
+        ">Ingresar</button>
+    </div>
 </body>
 </html>
