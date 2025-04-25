@@ -14,22 +14,34 @@
     <div class="stickers">
         <div class="sticker">
             <img src="assets/imgs/buho.png" alt="">
-            <input type="text">
+            <input type="number" class="stickerbuho">
         </div>
         <div class="sticker">
             <img src="assets/imgs/gorila.png" alt="">
-            <input type="text">
+            <input type="number" class="stickergorila">
         </div>
         <div class="sticker">
             <img src="assets/imgs/pensamiento.png" alt="">
-            <input type="text">
+            <input type="number" class="stickerpersona">
         </div>
     </div>
     <div class="mensaje">
-        <p></p>
+        <p class="parraforespuesta"></p>
     </div>
     <div class="boton">
-        <button>Verificar</button>
+        <button onclick="
+            let A = parseInt(document.querySelector('.stickerbuho').value) || 0;
+            let B = parseInt(document.querySelector('.stickergorila').value) || 0;
+            let C = parseInt(document.querySelector('.stickerpersona').value) || 0;
+            let total = A + B + C;
+            let parrafoRespuesta = document.querySelector('.parraforespuesta');
+            
+            if (total > 10) {
+                parrafoRespuesta.textContent = 'Llevas demasiados stickers';
+            } else {
+                parrafoRespuesta.textContent = 'Llevas ' + total + ' stickers';
+            }
+            ">Verificar</button>
     </div>
     <!-- JS -->
     <script src="assets/js/desafio2.js"></script>
