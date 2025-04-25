@@ -30,9 +30,9 @@
     </div>
     <div class="boton">
         <button onclick="
-            let A = parseInt(document.querySelector('.stickerbuho').value) || 0;
-            let B = parseInt(document.querySelector('.stickergorila').value) || 0;
-            let C = parseInt(document.querySelector('.stickerpersona').value) || 0;
+            let A = Math.max(0, parseInt(document.querySelector('.stickerbuho').value) || 0);
+            let B = Math.max(0, parseInt(document.querySelector('.stickergorila').value) || 0);
+            let C = Math.max(0, parseInt(document.querySelector('.stickerpersona').value) || 0);
             let total = A + B + C;
             let parrafoRespuesta = document.querySelector('.parraforespuesta');
             
@@ -43,7 +43,5 @@
             }
             ">Verificar</button>
     </div>
-    <!-- JS -->
-    <script src="assets/js/desafio2.js"></script>
 </body>
 </html>
